@@ -11,7 +11,7 @@ import java.io.*;
  * substring. Algo semelhante ao que faz o comando grep do Linux.
  * 
  * Command line to run:
- * java Q2.java ../../assets/arquivo1.txt tecnologia
+ * java Q2.java ../../assets/arquivo1l1.txt tecnologia
  */
 
 public class Q2 {

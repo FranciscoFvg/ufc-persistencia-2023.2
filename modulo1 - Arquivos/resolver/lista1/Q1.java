@@ -11,7 +11,7 @@ import java.io.*;
  * comando head do Linux.
  * 
  * Command line to run:
- * java Q1.java ../../assets/arquivo1.txt
+ * java Q1.java ../../assets/arquivo1l1.txt
  * 
  */
 

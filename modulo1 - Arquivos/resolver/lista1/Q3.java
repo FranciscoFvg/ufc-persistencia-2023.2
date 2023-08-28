@@ -11,7 +11,7 @@ import java.io.*;
  * do Linux.
  * 
  * Command line to run:
- * java Q3.java ../../assets/arquivo1.txt ../../assets/arquivo2.txt
+ * java Q3.java ../../assets/arquivo1l1.txt ../../assets/arquivo2l1.txt
  */
 
 public class Q3 {
