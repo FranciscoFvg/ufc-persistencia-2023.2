@@ -1,0 +1,49 @@
+/* @Author: Vitor Gomes
+ * @version 1.0
+ * @since 1.0
+ * @see modulo1.resolver.lista2
+ * 
+ * 2. Escolha e baixe um arquivo csv a partir do link e use-o nas questões a seguir.
+ *    Na resolução desta questão, não enviar os arquivos envolvidos, mas somente os
+ *    resultados pedidos em arquivo texto com extensão txt.
+ *    Envie somente o link do arquivo CSV escolhido.
+ *     
+ * Gere as somas checksum, md5, sha1 e sha256 do arquivo csv escolhido, usando utilitários de linha 
+ *     de comando do próprio sistema operacional ou instalado nele.
+ * Compare os tempos de execução e tamanhos dos arquivos gerados. Dica: para obter o tempo de execução,
+ *     use o comando time.
+ * Exemplo: time md5sum iris.csv
+ * 
+ */
+
+link arquivo: https://zenodo.org/record/3469741/files/2014_08-Traffic_Sensors_Fortaleza.csv?download=1
+md5 original no site: a2fe515c8425860ea18b16db78d2252b
+
+Resultados (testados usando o WSL do windows com Ubuntu 22.04):
+
+- MD5
+    * Comando: time md5sum 2014_08-Traffic_Sensors_Fortaleza.csv
+    - a2fe515c8425860ea18b16db78d2252b  2014_08-Traffic_Sensors_Fortaleza.csv
+    - real    0m0.671s
+    - user    0m0.651s
+    - sys     0m0.020s
+
+- sha1
+    * Comando: time sha1sum 2014_08-Traffic_Sensors_Fortaleza.csv
+    - b0107c30f33e3e6d3906cc4a7b2cf6a62dd08600  2014_08-Traffic_Sensors_Fortaleza.csv
+    - real    0m0.746s
+    - user    0m0.716s
+    - sys     0m0.031s
+
+- sha256
+    * Comando: time sha256sum 2014_08-Traffic_Sensors_Fortaleza.csv
+    - 128176efc2f4a196b333dbf1be70f930f893d95a4c6189fb19d7c566ad826b84  2014_08-Traffic_Sensors_Fortaleza.csv
+    - real    0m1.683s
+    - user    0m1.622s
+    - sys     0m0.060s
+
+Ánalise simples:
+    Pelos testes feitos constata-se que o arquivo CSV baixado está íntegro (comparando o md5 do teste, e
+    o md5 fornecido pelo site). Além disso, fica claro que o método hash mais rápido a ser efetuado é o
+    md5, mas que apesar disso não é a melhor opção, já que apesar ser mais lento, o sha256 é o que oferece
+    menor probabilidade de colisões e a "lentidão" não é impactante o suficiente para não ser usado.
