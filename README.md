@@ -9,3 +9,6 @@
     - lista3: Leitura de CSV, uso de hash e properties em java
     - lista4: Compactação zip, encriptação/decriptação e hashs com java
     - lista5: Serialização e desserialização java, xml e json
+    
+- Modulo 2
+    - lista1: JDBC e DAO

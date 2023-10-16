@@ -10,8 +10,8 @@ import com.fasterxml.jackson.databind.SerializationFeature;
  * @since 1.0
  * @see modulo1.resolver.lista5.xml
  * 
- * 5. Crie uma classe java de nome DesserializaXML para ler / desserializar os 
- * objetos Serializados na Questão 4 e exibi-los.
+ * 7. Crie uma classe java de nome DesserializaJSON para ler / desserializar 
+ * os objetos Serializados na Questão 6 e exibi-los.
  * 
  * 
  */
