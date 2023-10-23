@@ -12,3 +12,4 @@
     
 - Modulo 2
     - lista1: JDBC e DAO
+    - lista2: JDBC e DAO com Spring
